@@ -130,6 +130,8 @@ export const hiddenNotes = [
   "You're my favourite person to make up with.",
   "I'm proud of you, bachha.",
   "I'm sorry for the times I didn't listen well.",
+  "In this difficult time especially — I'm here. Not leaving.",
+  "However heavy today gets, you're still the person I choose.",
 ];
 
 export const questions = [
