@@ -210,7 +210,7 @@ export function Games() {
           <button key={l} onClick={() => setT(i)} className={`rounded-full px-4 py-1.5 text-sm font-bold transition ${t === i ? "bg-rose-grad text-primary-foreground" : "bg-card"}`}>{l}</button>
         ))}
       </div>
-      <Card className="mx-auto max-w-xl">{tabs[t][1]}</Card>
+      <Card className="mx-auto max-w-xl">{tabs[t]?.[1]}</Card>
     </Section>
   );
 }
