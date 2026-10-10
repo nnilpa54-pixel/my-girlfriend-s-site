@@ -177,6 +177,10 @@ export const letter = [
   "I gave you that T-shirt hoping you'd feel a little closer to me when I couldn't be with you. And when I proposed, I wasn't nervous about my feelings — I've always been sure of those. I was only nervous because you matter so much.",
   "These last few months haven't been easy. We've argued, we've gone quiet, and I know some of that hurt you. I'm sorry for the times I talked when I should have listened, and for the times I made you feel unheard.",
   "I want to listen better. I want to respect your feelings even when I don't fully understand them yet. And I don't want to just say this — I want to show it, slowly, through what I do.",
+  "I need you to hear this clearly, bachha: I love you. Not the small, easy kind — the kind that stays. You're the first person I think of when the day feels heavy and the last one before I sleep. Loving you isn't something I have to decide. It's just what my heart keeps doing.",
+  "And I know this is a difficult time. Everything around us feels loud and uncertain right now, and I know it's been tiring for you too. So let me say it plainly — I'm here. Not only for the good days. For this one, and for whatever comes after it.",
+  "You don't have to carry any of it by yourself. If you're scared, tell me. If you're tired, lean on me. If you don't have words, we can just be quiet together. You don't have to be strong around me — I can hold enough for both of us.",
+  "Whatever is happening outside us, the answer inside me never changes, and that answer is you. I'm choosing you — calmly, on purpose, again today.",
   "I love you on the easy days and the difficult ones. Distance and hard moments don't change that.",
   "Take all the time you need. I'll be here.",
 ];
