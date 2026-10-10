@@ -49,22 +49,28 @@ export const memories = [
   },
 ];
 
-/* ---------- Gallery ----------
- * Put files in /public/media/ and set src: "/media/your-file.jpg".
- * type: "image" | "video". Leave src empty to show an empty polaroid frame.
- */
+/* ---------- Gallery ---------- */
+import photo1 from "@/assets/WhatsApp_Image_2026-10-10_at_2.54.12_PM_2.jpeg.asset.json";
+import photo2 from "@/assets/WhatsApp_Image_2026-10-10_at_2.54.23_PM.jpeg.asset.json";
+import video1 from "@/assets/WhatsApp_Video_2026-10-10_at_2.54.13_PM.mp4.asset.json";
+import video2 from "@/assets/WhatsApp_Video_2026-10-10_at_2.54.14_PM_2.mp4.asset.json";
+import video3 from "@/assets/WhatsApp_Video_2026-10-10_at_2.54.15_PM.mp4.asset.json";
+import video4 from "@/assets/WhatsApp_Video_2026-10-10_at_2.54.16_PM_1.mp4.asset.json";
+import video5 from "@/assets/WhatsApp_Video_2026-10-10_at_2.54.16_PM_2.mp4.asset.json";
+import video6 from "@/assets/WhatsApp_Video_2026-10-10_at_2.54.22_PM_1.mp4.asset.json";
+import video7 from "@/assets/WhatsApp_Video_2026-10-10_at_2.54.22_PM_3.mp4.asset.json";
+
 export type GalleryItem = { src: string; type: "image" | "video"; caption: string };
 export const gallery: GalleryItem[] = [
-  { src: "", type: "image", caption: "The day we first met ♡" },
-  { src: "", type: "image", caption: "You in the T-shirt" },
-  { src: "", type: "image", caption: "The proposal" },
-  { src: "", type: "image", caption: "Your smile" },
-  { src: "", type: "video", caption: "A little video of us" },
-  { src: "", type: "image", caption: "Us being silly" },
-  { src: "", type: "image", caption: "My favourite picture" },
-  { src: "", type: "image", caption: "Another favourite" },
-  { src: "", type: "image", caption: "Just you" },
-  { src: "", type: "image", caption: "Our day out" },
+  { src: photo1.url, type: "image", caption: "Us ♡" },
+  { src: photo2.url, type: "image", caption: "My cutie being silly 😌" },
+  { src: video1.url, type: "video", caption: "A little moment of us" },
+  { src: video2.url, type: "video", caption: "I could watch this forever" },
+  { src: video3.url, type: "video", caption: "You, being you" },
+  { src: video4.url, type: "video", caption: "My favourite kind of day" },
+  { src: video5.url, type: "video", caption: "This smile of yours" },
+  { src: video6.url, type: "video", caption: "One more for the heart" },
+  { src: video7.url, type: "video", caption: "Always us ♡" },
 ];
 
 /* ---------- Soundtrack ----------
