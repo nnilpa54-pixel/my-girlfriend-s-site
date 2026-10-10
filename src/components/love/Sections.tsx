@@ -110,7 +110,7 @@ function Quiz() {
   const [picked, setPicked] = useState<number | null>(null);
   const done = i >= C.quiz.length;
   if (done) return <div className="text-center"><p className="text-2xl font-hand">You got {score}/{C.quiz.length} ♡</p><p className="mt-1 text-sm">{score === C.quiz.length ? "Perfect, bachha!" : "Still my favourite answer: you."}</p><GhostButton className="mt-4" onClick={() => { setI(0); setScore(0); setPicked(null); }}>Play again</GhostButton></div>;
-  const q = C.quiz[i];
+  const q = C.quiz[i]!;
   return (
     <div>
       <p className="font-bold">{i + 1}. {q.q}</p>
@@ -146,7 +146,7 @@ function Wheel() {
     const pick = Math.floor(Math.random() * n);
     const target = rot + 1440 + (360 - (rot % 360)) - pick * seg - seg / 2;
     setRes(null); setRot(target);
-    setTimeout(() => setRes(C.wheel[pick]), 3200);
+    setTimeout(() => setRes(C.wheel[pick]!), 3200);
   };
   const colors = ["var(--blush)", "var(--peach)", "var(--paper)", "var(--accent)"];
   const bg = `conic-gradient(${C.wheel.map((_, i) => `${colors[i % 4]} ${i * seg}deg ${(i + 1) * seg}deg`).join(",")})`;

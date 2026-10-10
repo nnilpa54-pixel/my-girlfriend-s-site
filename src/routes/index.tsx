@@ -24,7 +24,7 @@ function Index() {
   useEffect(() => {
     if (!opened) return;
     const obs = new IntersectionObserver(
-      (es) => es.forEach((e) => e.isIntersecting && setChapter((e.target as HTMLElement).dataset.chapter as Chapter)),
+      (es) => es.forEach((e) => e.isIntersecting && setChapter((e.target as HTMLElement).dataset["chapter"] as Chapter)),
       { rootMargin: "-45% 0px -45% 0px" },
     );
     document.querySelectorAll("[data-chapter]").forEach((el) => obs.observe(el));
