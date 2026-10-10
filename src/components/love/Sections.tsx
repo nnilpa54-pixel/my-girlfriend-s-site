@@ -68,7 +68,7 @@ export function Gallery() {
   }, [open, items.length]);
 
   const Media = ({ i, big }: { i: number; big?: boolean }) => {
-    const it = items[i];
+    const it = items[i]!;
     if (!it.src) return <div className="screentone grid aspect-square w-full place-items-center bg-muted text-center text-sm text-muted-foreground">{it.type === "video" ? "🎬" : "📷"}<br />add in content.ts</div>;
     return it.type === "video"
       ? <video src={it.src} controls={big} muted={!big} playsInline className={`w-full object-cover ${big ? "max-h-[70vh]" : "aspect-square"}`} />
@@ -90,7 +90,7 @@ export function Gallery() {
         <div role="dialog" aria-label="Photo viewer" onClick={() => setOpen(null)} className="fixed inset-0 z-50 grid place-items-center bg-ink/80 p-4">
           <div onClick={(e) => e.stopPropagation()} className="w-full max-w-2xl bg-paper p-4 pb-6 shadow-polaroid">
             <Media i={open} big />
-            <p className="mt-3 text-center font-hand text-3xl">{items[open].caption}</p>
+            <p className="mt-3 text-center font-hand text-3xl">{items[open]?.caption}</p>
             <div className="mt-3 flex justify-between">
               <GhostButton onClick={() => setOpen((open - 1 + items.length) % items.length)}>‹ Prev</GhostButton>
               <GhostButton onClick={() => setOpen(null)}>Close</GhostButton>
